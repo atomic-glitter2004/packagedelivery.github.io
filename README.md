@@ -17,8 +17,22 @@ import numpy as np
 def optimal_delivery_route(points, route, availability=None, start_time=9.0, speed_vihicle=15,
                            house_delivery_time_min=10):
 
-  :param these values are just adapted to fit our theroretical circumstance, could be changed and adapted to spesific circumstnace
-
+ """
+ :param these values are just adapted to fit our theroretical circumstance, could be changed and adapted to spesific circumstnace
+    //这些值只是为了适应测试值，可以根据具体情况进行修改和调整
+ :param points: the (x,y), which is the corrinates of the location on a axis
+    //points:(x,y)，即位置在“坐标轴”上的坐标
+ :param route: the route that is followed
+    //route:路线
+ :param availability: for when each household is avaliable, could be none, though, which just means avaliable all day
+    //availability:每位用户的可签收时间，也可以是没有本限制-即全天可用。
+ :param start_time: the time the deliverer starts working. this is to take in factor to organize household avaliability in route
+    //start_time:配送员开始工作的时间
+ :param speed_vihicle: speed of delivery vehicle in km/h
+    //speed_vihicle:送货交通工具的速度，单位为公里/小时
+ :param house_delivery_time_min: fixed delivery time per stop in minutes
+    //house_delivery_time_min：到每个送货点的固定送货时间，以分钟为单位
+ """
     if availability is None:
         availability = {}
 
