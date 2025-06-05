@@ -1,12 +1,17 @@
-# packagedelivery
-Package delivery and route optimization with Traveling Salesman Problem
+# Package Delivery Sample Calculation - Optimization code and output
+**Project by Ash** :octocat:
 
+Package delivery and route optimization that basically uses the fundementaln logic link in the classic NP-Hard problem: travelling salesman problem
+>This page's code is how I calculated the optimal route for example
+
+## Input code
 ```
 import numpy as np
 
-
 def optimal_delivery_route(points, route, availability=None, start_time=9.0, speed_vihicle=15,
                            house_delivery_time_min=10):
+
+  :param these values are just adapted to fit our theroretical circumstance, could be changed and adapted to spesific circumstnace
 
     if availability is None:
         availability = {}
@@ -76,6 +81,22 @@ for stop, t in arrival_times:
 print("\nUnwanted arrival out of time:")
 for stop, t in violations:
     print(f"{stop} violated at {t:.2f}h")
+
+```
+
+## And here is my outputs: 
+```
+Output:
+Arrival Times At Position:
+F: 09:00
+A: 09:35
+B: 09:53
+D: 10:23
+C: 10:44
+E: 11:09
+G: 11:27
+
+Unwanted arrival out of time:
 
 ```
 
