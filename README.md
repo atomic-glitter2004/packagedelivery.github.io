@@ -1,10 +1,16 @@
-# Package Delivery Sample Calculation - Optimization code and output
-**Project by Ash** :octocat:
+# Package Delivery Sample Calculation - Optimization code and output 配送路线样本计算 - 优化代码和输出
+**Project by Ash** 
+
+**Ash的项目** 
 
 Package delivery and route optimization that basically uses the fundementaln logic link in the classic NP-Hard problem: travelling salesman problem
->This page's code is how I calculated the optimal route for example
+这个包裹递送和路线优化过程基本与经典 NP-Hard 问题中的旅行推销员问题一样
 
-## Input code
+>This page's code is how I calculated the optimal route for example
+>
+>本页的代码是我计算最优路线的示例
+
+## Input code 代码部分
 ```
 import numpy as np
 
@@ -84,7 +90,7 @@ for stop, t in violations:
 
 ```
 
-## And here is my outputs: 
+## And here is my outputs 输出部分: 
 ```
 Output:
 Arrival Times At Position:
