@@ -3,6 +3,8 @@
 
 **Ash的项目与探索** 
 
+<img width="604" alt="Frmula TSP" src="https://github.com/user-attachments/assets/24686ca2-7343-4613-bfcf-bc3608e8ae55" />
+
 $`\text{Minimize: } \sum_{i=1}^{n-1} \left[ C(i, i+1, t) + \text{Delay}(i, i+1) + \text{Congestion}(i+1, t) \right]`$
 
 
