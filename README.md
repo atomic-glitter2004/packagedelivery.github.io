@@ -3,9 +3,7 @@
 
 **Ash的项目与探索** 
 
-$`
-\text{Minimize: } \sum_{i=1}^{n-1} \left[ C(i, i+1, t) + \text{Delay}(i, i+1) + \text{Congestion}(i+1, t) \right]
-`$
+$`\text{Minimize: } \sum_{i=1}^{n-1} \left[ C(i, i+1, t) + \text{Delay}(i, i+1) + \text{Congestion}(i+1, t) \right]`$
 
 
 Package delivery and route optimization that basically uses the fundementaln logic link in the classic NP-Hard problem: travelling salesman problem
