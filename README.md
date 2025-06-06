@@ -1,7 +1,12 @@
 # Package Delivery Sample Calculation - Optimization code and output 配送路线样本计算 - 优化代码和输出
-**Project by Ash** 
+**Project & Investigation by Ash** 
 
-**Ash的项目** 
+**Ash的项目与探索** 
+
+$`
+\text{Minimize: } \sum_{i=1}^{n-1} \left[ C(i, i+1, t) + \text{Delay}(i, i+1) + \text{Congestion}(i+1, t) \right]
+`$
+
 
 Package delivery and route optimization that basically uses the fundementaln logic link in the classic NP-Hard problem: travelling salesman problem
 这个包裹递送和路线优化过程基本与经典 NP-Hard 问题中的旅行推销员问题一样
